@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.google.com/specimen/Big+Shoulders+Display"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.google.com/specimen/Lexend+Deca"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | 3-column preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .row {
+        display: flex;
+        flex-direction: row;
+        /* justify-content: space-around; */
+      }
+      .column {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        float: left;
+        padding: 10px;
+      }
+      .component {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+      .icon-img {
+        margin-right: 70%;
+        margin-top: 10%;
+        margin-left: 10%;
+        padding: 10px;
+      }
+      h2 {
+        font-family: "Big Shoulders Display";
+        font-weight: 700;
+        color: white;
+        margin-right: 60%;
+        margin-left: 10%;
+
+        padding: 10px;
+      }
+      p {
+        color: white;
+        margin-right: 30%;
+        padding: 10px;
+      }
+      a {
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        border: 1px solid white;
+        border-radius: 20px;
+        padding: 10px 20px;
+        margin-top: 30%;
+        margin-bottom: 10%;
+        margin-right: 40%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="component">
+      <div class="row">
+        <div class="column" style="background-color: hsl(31, 77%, 52%)">
+          <img
+            class="icon-img"
+            src="images/icon-sedans.svg"
+            alt="sedans icon"
+          />
+          <h2>SEDANS</h2>
+          <p>
+            Choose a sedan for its affordability and excellent fuel economy.
+            Ideal for cruising in the city or on your next road trip.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="column" style="background-color: hsl(184, 100%, 22%)">
+          <img class="icon-img" src="images/icon-suvs.svg" alt="suvs icon" />
+          <h2 style="margin-right: 70%">SUVS</h2>
+          <p>
+            Take an SUV for its spacious interior, power, and versatility.
+            Perfect for your next family vacation and off-road adventures.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="column" style="background-color: hsl(179, 100%, 13%)">
+          <img
+            class="icon-img"
+            src="images/icon-luxury.svg"
+            alt="luxury icon"
+          />
+          <h2>LUXURY</h2>
+          <p>
+            Cruise in the best car brands without the bloated prices. Enjoy the
+            enhanced comfort of a luxury rental and arrive in style.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
